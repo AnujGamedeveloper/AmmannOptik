@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .email-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #ffffff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+
+            .header img {
+                display: block;
+                margin: 0 auto;
+                width: 300px; /* Adjust based on the logo size */
+                height: auto;
+            }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .coupon-code {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+            .coupon-code img {
+                max-width: 100px; /* Adjust based on the image size */
+                height: auto;
+                border-radius: 8px;
+                margin-right: 10px; /* Add space between image and text */
+            }
+
+        .footer {
+            background-color: #0081c3;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 0 0 8px 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <!-- Center the company logo here -->
+            <img src="http://cloudtactsolutions.com/Ammann/Logo.png" alt="Company Logo">
+        </div>
+        <div class="content">
+            <p>Hello,</p>
+            <p>We're excited to have you on board.</p>
+            <p>Here's your Coupon Code</p>
+            <p>Avail Glasses - {{PERCENTAGE}} OFF</p> <!-- Placeholder for percentage -->
+            <!-- Add a coupon code image and text side by side -->
+            <div class="coupon-code">
+                <img src="http://cloudtactsolutions.com/Ammann/promo.png" alt="Coupon Code Image">
+                <p id="coupon-text" style="font-size: 18px; font-weight: bold;">AO2607154623</p>
+            </div>
+            <p>Thank you for joining us!</p>
+            <p>Please visit <a href="https://www.ammannoptik.ch" target="_blank">www.ammannoptik.ch</a></p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 Ammann Optik. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
